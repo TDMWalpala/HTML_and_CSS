@@ -1,0 +1,79 @@
+/*pseudo classes*/
+.link{
+    font-size: 25px;
+    background-color:white;
+
+}
+.link:hover{
+    background-color: black;
+
+}
+.link:active{
+    background-color: crimson;
+    color: black;
+
+}
+.link:visited{
+    background-color: rgb(126, 18, 126);
+    
+}
+.chl p:first-child{
+    color: red;
+
+}
+.chl p:nth-child(5){
+    color: greenyellow;
+}
+.chl p:nth-child(even){
+    color: blueviolet; 
+}
+input[type="text"]:focus{
+    background-color: chartreuse;
+}
+input[type="email"]:disabled{
+    background-color: black;
+}
+input[type="checkbox"]:checked +p{
+    background-color: crimson;
+}
+/*pseodo elements*/
+.req::before{
+    content:'';
+    height: 15px;
+    width: 15px;
+    display: block;
+    background-color:red;
+}
+.req::after{
+    content:'';
+    height: 15px;
+    width: 15px;
+    display: block;
+    background-color:blue;
+}
+.frm button{
+    position: relative;
+}
+.frm button:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightblue;
+
+}
+.pera::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+.pera::first-line{
+    color: rgb(126, 18, 126);
+    font-variant: small-caps;
+}
+::selection{
+    color: red;
+    background-color: yellow;
+}

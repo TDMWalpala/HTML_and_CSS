@@ -1,0 +1,26 @@
+/*basic styling*/
+body{
+    background-color:gray;
+}
+.box{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    transition-property: all;
+    /*transition-property: background-color,border-radius,transform;*/
+    transition-duration: 1s,1s,1s;
+   /* transition-delay: 5s;*/
+   transition-timing-function: linear;
+
+}
+.box:hover{
+    background-color: coral;
+    border-radius: 30%;
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    /*margin: auto auto auto 400px;*/
+    opacity: 0.2;
+}
+/* backgroud-color,max-heigth,,max-width,padding,font-size,font-weigth,color,line-heigth,border-width,outline-color,top */

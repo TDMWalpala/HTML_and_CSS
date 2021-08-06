@@ -1,0 +1,15 @@
+/*basic styling*/
+.container >div{
+    background-color: violet;
+    padding: 10px;
+}
+.container >div:nth-child(odd){
+    background-color: rgb(177, 138, 67);
+}
+/*grid layout*/
+.container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;/*grid-gap:2em 1em;*/
+}
