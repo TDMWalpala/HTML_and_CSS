@@ -1,0 +1,129 @@
+
+/*global */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+/*header header*/
+#main-header{
+    background-color:rgb(18, 105, 105) ;
+    width: 100%;
+    
+    top: 0;
+}
+/*logo*/
+.logo{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+}   
+/*navbar*/
+#navbar{
+    margin:10px;
+    float:right;
+
+}
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+#navbar li{
+    display: inline;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 10px;
+    cursor: pointer;
+    
+}
+#navbar a:hover{
+    background-color: white;
+    color: black;
+}
+/*hero section*/
+#hero{
+    background-image: url(../Government.jpg);
+    background-position: center;
+   /* height: 400px;*/
+    min-height: 400px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#hero h1{
+    color: black;
+    font-size: 16px;
+    line-height: 1.6em;
+    padding: 50px;
+
+}
+/*body content*/
+#main-section{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#main-section h1{
+    padding-bottom: 20px;
+     
+}
+#sidebar{
+    float: right;
+    width: 30%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+}
+/*footer*/
+#ftr{
+    background-color:rgb(18, 105, 105);
+    color:black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 110px;
+}
+/*media  queries*/
+@media(max-width:900px){
+    #main-section{
+        float: none;
+        width: 100px;
+    }
+    #sidebar{
+        float: none;
+        width: 100%;
+    }
+}
+@media(min-width:1050px){
+    #hero h1{
+        padding: 110px;
+    }
+}
+@media(max-width:865px){
+    #navbar li{
+        padding: 10px 5px;
+    
+    }
+    #navbar a{
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+}

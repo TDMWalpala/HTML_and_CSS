@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>My first web site</title>
+    </Head>
+    <body>
+      <a href="block.html">blog page</a>
+      <!--forms-->
+        <form action="./php/process.php" method="POST">
+            <div>
+              <label for="">first name :</label>
+              <input type="text" required>
+            </div>  
+              <br>
+            <div>  
+              <label for="">last name :</label>
+              <input type="text" required>
+            </div>  
+              <br>
+            <div>
+              <label for="">email</label>
+              <input type="email" name="email" placeholder="type your correc email"required>
+            </div>
+              <br>
+            <div>
+                <label for="">message :</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>  
+              <br>
+            <div>
+                <label for="">gender</label><!--grop down menu-->
+                <select name="gender" id="gender ">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                </select>
+            </div> 
+              <br>
+            <div>
+                <label for="">age :</label>
+                <input type="number" name="age">
+            </div>
+              <br>
+            <div>
+            <label for="">birthdaty  :</label>
+                <input type="date" name="date">
+            </div> 
+            <br>
+            <div>
+                <label for="">profile picture :</label>
+                <input type="file" name="imgfile">
+            </div> 
+            <br>
+            <div>
+                <label for="">favourite food :</label>
+                <input type="checkbox" name="apple" value="apple"><label for=""> -apple</label>
+                <input type="checkbox" name="chocolate" value="chocalate"><label for=""> -chocolate</label>
+                <input type="checkbox" name="cake" value="cake"><label for=""> -cake</label>
+                <input type="checkbox" name="rice" value="rice"><label for=""> -rice</label>
+            </div> 
+              <br>
+            <div>
+                <label for="">user type :</label>
+                <input type="radio" name="usertype" value="static"><label for="">static</label>
+                <input type="radio" name="usertype" value="dynamic"><label for="">dynamic</label>
+            </div> 
+              <br> 
+            <div>
+              <input type="submit" value="submit">
+              <button type="submit">submit</button>
+            </div> 
+        </form>
+        <hr>
+        <!--button-->
+        <button>click me</button>
+        <hr>
+        <!--images-->
+        <a href="./img1.jpg"target="_blank">
+        <img src="./img1.jpg" alt="this is an image" srcset="" height="300" width="300"></a>
+        <hr>
+        <!--quatations--><!--short tag "<q>"-->
+        <blockquote cite="http://google.lk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem esse totam iste dolore repellendus molestiae cum? Nemo officia, nam nisi explicabo doloribus, adipisci magni repellendus natus doloremque impedit enim!
+        </blockquote>
+        <hr>
+        <!--abbreviation-->
+        <p>
+          The <abbr title="world wide web">www</abbr> is one of amazing things that ever.
+        </p>
+        <hr>
+        <section>
+          <p>HTML crash course <cite>tharindu</cite></p>
+        </section>
+        <hr>
+        
+<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+
+<p>Then, try to set autocomplete to "off".</p>
+
+<form action="/action_page.php" autocomplete="off">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+        <footer>
+          <p>copyright &copy;2020</p>
+        </footer>
+
+
+
+    </body>
+</html>
