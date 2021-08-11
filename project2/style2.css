@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right,rgb(19, 153, 19), yellow);
+    height: 100vh;
+    display: flex;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+.load{
+    /*background-color: blue;*/
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    border-top: red 10px solid;
+    position: relative;
+    animation: animation1 2s linear infinite;
+}
+.load::after, .load::before{
+    content:'';
+    /*background-color: rebeccapurple;*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    border-radius: 20%;
+
+}
+.load::after{
+    border-top: orange 10px solid;
+    transform: rotate(120deg);
+    
+}
+.load::before{
+    border-top: yellow 10px solid;
+    transform: rotate(240deg);
+    
+}
+.load span{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 18px;
+    color: ivory;
+    animation: animation2 2s linear infinite;
+}
+@keyframes animation1{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animation2{
+    0%{
+        color: red;
+    }
+    50%{
+        color: yellow;
+    }
+    100%{
+        color: orange;
+    }
+}
