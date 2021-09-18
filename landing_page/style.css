@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+/* -----Reset----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----Common----- */
+body{
+    background-color: #7ed6df;
+    width: 100%;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+
+li{
+    list-style: none;
+    transition: all 0.3s ease-in;
+}
+
+li:not(:last-child):hover{
+    transform: translateY(3px);
+}
+
+/* -----Header----- */
+.hdr{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    background-color: #7ed6df;
+}
+
+/* Logo */
+.logo{
+    text-align: center;
+}
+.logo h3{
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.logo h3 span{
+    background-color: #fff;
+    padding: 3px 8px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* Nav Menu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li{
+    margin: 0px 10px;
+}
+
+.get-btn{
+    padding: 6px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.get-btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* Mobile Menu */
+#menu-dis{
+    display: none;
+}
+
+.hdr label{
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.hdr label i{
+    color: #000;
+    font-size: 1.7rem;
+}
+
+/* -----Container----- */
+.container{
+    width: 100%;
+    min-height: 80vh;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+
+/* Content */
+.container .content{
+    width: 600px;
+    margin: 0px 5px;
+}
+
+.container .content h1{
+    font-size: 4rem;
+}
+
+.container .content p{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.container .content a{
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.container .content a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Image */
+.container .bg-image{
+    width: 600px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.container .bg-image img{
+    width: 100%;
+}
+
+/* -----Footer----- */
+.ftr{
+    position: fixed;
+    bottom: 0;
+    background-color: #7ed6df;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+/* -----Responsive----- */
+@media(max-width: 1000px){
+    /* Header */
+    .hdr{
+        flex-direction: column;
+    }
+
+    .hdr .logo{
+        margin-bottom: 20px;
+    }
+
+    /* Container */
+    .container{
+        flex-direction: column;
+    }
+
+    .container .content{
+        width: 500px;
+        padding: 10px 40px;
+        text-align: center;
+    }
+
+    .container .content h1{
+        font-size: 3rem;
+    }
+
+    .container .bg-image{
+        width: 400px;
+    }
+
+    /* Footer */
+    .ftr{
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 550px){
+    /* Header */
+    .hdr .menu{
+        position: absolute;
+        background-color: ;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 0px;
+        top: 80px;
+        left: -100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in;
+        z-index: 10;
+    }
+
+    .hdr .menu li{
+        margin: 10px 0px;
+        color: #FFFFFF
+        • #EEEEEE
+        • #DDDDDD
+        • #000103
+        • #333138
+        • #4E598C
+        • #4E59FF
+        • #F9C784
+        • #FCAF58
+        • #FF8C42
+        • #FF312E
+      ;
+    }
+
+    .hdr label:nth-child(2){
+        display: block;
+    }
+
+    /* Container */
+    .container .content,
+    .container .bg-image{
+        width: 300px;
+    }
+
+    .container .content h1{
+        font-size: 2.5rem;
+    }
+
+    /* Mobile Menu */
+    #menu-dis:checked ~ .menu{
+        left: 0;
+        max-height: 100%;
+    }
+
+    #menu-dis:checked ~ label:nth-child(2){
+        display: none;
+    }
+
+    #menu-dis:checked ~ label:nth-child(3){
+        display: block;
+    }
+}
