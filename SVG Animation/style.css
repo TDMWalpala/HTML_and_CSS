@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #63c0eb;
+}
+
+.container{
+    max-width: 1000px;
+    width:100%;
+
+}
+svg{
+    width:100%;
+    margin-top: -150px;
+}
+
+#p1_leg_left{
+    animation:p1-move-left-leg 2s infinite alternate;
+    transform-origin: top left;
+    transform-box: fill-box;
+
+}
+@keyframes p1-move-left-leg{
+        from{
+            transform: rotateZ(0deg)
+        }
+
+        to{
+            transform:rotateZ(-5deg)
+        }
+}
+
+#p1_hand_left,
+#p1_hand_right{
+
+    animation:p1-move-hands 1s infinite alternate;
+    transform-origin: top left;
+    transform-box: fill-box;
+}
+
+@keyframes p1-move-hands{
+    from{
+        transform: rotateZ(-5deg)
+    }
+
+    to{
+        transform:rotateZ(5deg)
+    }
+}
+
+
+#p2_leg_left{
+    animation:p2-move-left-leg 1s infinite alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+
+}
+@keyframes p2-move-left-leg{
+        from{
+            transform: rotateZ(0deg)
+        }
+
+        to{
+            transform:rotateZ(10deg)
+        }
+}
+
+#p2_hand_left,
+#p2_hand_right{
+
+    animation:p2-move-hands 3s infinite alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+@keyframes p2-move-hands{
+    from{
+        transform: rotateZ(-5deg)
+    }
+
+    to{
+        transform:rotateZ(5deg)
+    }
+}
+
+#p1_head,
+#p2_head{
+
+    animation: p1-p2-move-head 2s infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes P1-p2-move-head{
+    from{
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        transform: rotateZ(10deg);
+    }
+}
